@@ -8,12 +8,15 @@ Require __node__ and __npm__
 
 Just install by :
 
-    npm install
+```bash
+  npm install
+```
 
 And tentatively run with :
 
-    npm run
-
+```bash
+  npm run
+```
 ---
 
 ### Source
@@ -35,6 +38,18 @@ Calculate at time t coordinate, where :
 * v : initial velocity
 * d : 1.62 * 0.0254
 
+\
+*Coordinate through time*
+
     m y''(t) = -s(wx * z'(t) - wy * x'(t)) - 0.5 * A * Cd * p * y'(t)^2 + g * (-m)  
     m x''(t) = s(wz * y'(t) - wy * z'(t)) - 0.5 * A * Cd * p * x'(t)^2  
     m z''(t) = s(wx * y'(t) - wy * x'(t)) - 0.5 * A * Cd * p * z'(t)^2  
+
+
+*Lift Force*
+
+    Fl = 1/2 * Cl * p * A * v^2
+
+*Drag Force*
+
+    Fd = 1/2 * Cd * p * A * v^2
