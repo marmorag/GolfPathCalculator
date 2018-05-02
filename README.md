@@ -28,7 +28,7 @@ And tentatively run with :
 ### Form
 
 Calculate at time t coordinate, where :
-* s : lift coefficient
+* Cl : lift coefficient
 * Cd : drag coefficient
 * {wx,wy,wz} spin on axis
 * p : 1.205 , air density
@@ -41,9 +41,9 @@ Calculate at time t coordinate, where :
 \
 *Coordinate through time*
 
-    m y''(t) = -s(wx * z'(t) - wy * x'(t)) - 0.5 * A * Cd * p * y'(t)^2 + g * (-m)  
-    m x''(t) = s(wz * y'(t) - wy * z'(t)) - 0.5 * A * Cd * p * x'(t)^2  
-    m z''(t) = s(wx * y'(t) - wy * x'(t)) - 0.5 * A * Cd * p * z'(t)^2  
+    m y''(t) = -Cl(wx * z'(t) - wy * x'(t)) - 0.5 * A * Cd * p * y'(t)^2 + g * (-m)  
+    m x''(t) = Cl(wz * y'(t) - wy * z'(t)) - 0.5 * A * Cd * p * x'(t)^2  
+    m z''(t) = Cl(wx * y'(t) - wy * x'(t)) - 0.5 * A * Cd * p * z'(t)^2  
 
 > Where x', y' and z' previous values of each
 
