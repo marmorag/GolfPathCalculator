@@ -45,6 +45,7 @@ Calculate at time t coordinate, where :
     m x''(t) = s(wz * y'(t) - wy * z'(t)) - 0.5 * A * Cd * p * x'(t)^2  
     m z''(t) = s(wx * y'(t) - wy * x'(t)) - 0.5 * A * Cd * p * z'(t)^2  
 
+> Where x', y' and z' previous values of each
 
 *Lift Force*
 
